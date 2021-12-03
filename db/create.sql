@@ -25,7 +25,7 @@ insert into products (name, description, code, price) values ('BH', 'Mauris enim
 
 Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
 
-In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '816905633-0', 69);
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '816905633-0', 69.0);
 insert into products (name, description, code, price) values ('STRING', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
 
 Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
