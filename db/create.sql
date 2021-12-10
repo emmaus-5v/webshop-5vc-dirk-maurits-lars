@@ -9,8 +9,36 @@ CREATE TABLE products (
   name VARCHAR(255),
   description TEXT,
   price NUMERIC(10, 2)
+  genre_id INTEGER,
+  schrijver_id INTEGER,
+  bladzijdes INTEGER,
+  uitgever_id INTEGER,
 );
 
+DROP TABLE IF EXISTS genre;
+CREATE TABLE genre (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(30)
+);
+
+DROP TABLE IF EXISTS products_genre;
+CREATE TABLE products_genre (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  boek_id INTEGER
+  genre_id INTEGER
+);
+
+DROP TABLE IF EXISTS schrijver;
+CREATE TABLE schrijver (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(101)
+);
+
+DROP TABLE IF EXISTS uitgever;
+CREATE TABLE uitgever (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(101)
+);
 
 --
 -- populate with data
