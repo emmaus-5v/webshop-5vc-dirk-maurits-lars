@@ -8,7 +8,7 @@ CREATE TABLE products (
   code VARCHAR(15),
   name VARCHAR(255),
   description TEXT,
-  price NUMERIC(10, 2)
+  price NUMERIC(10, 2),
   genre_id INTEGER,
   schrijver_id INTEGER,
   bladzijdes INTEGER,
@@ -22,12 +22,7 @@ CREATE TABLE genre (
   name VARCHAR(30)
 );
 
-DROP TABLE IF EXISTS products_genre;
-CREATE TABLE products_genre (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  boek_id INTEGER
-  genre_id INTEGER
-);
+
 
 DROP TABLE IF EXISTS schrijver;
 CREATE TABLE schrijver (
@@ -66,6 +61,8 @@ insert into products (name, description, code, price, genre_id, schrijver_id, bl
 insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('Jip en Janneke', '..', '672662523-7', 7, 5/6, 6, 353, 5, 2);
 insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('Joe Speedboot', '..', '498862523-7', 14, 6, 7, 316, 1 , 2);
 insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('De aanslag', '..', '492493523-7', 27, 8, 8, 352, 1, 1);
+insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('De aanslag', '..', '492493523-7', 27, 8, 8, 352, 1, 1);
+insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('De aanslag', '..', '492493523-7', 27, 8, 8, 352, 1, 1);
 
 insert into genre (name) values ('Drama');
 insert into genre (name) values ('Literaire fictie');
@@ -93,6 +90,3 @@ insert into uitgever (name) values ('Querido');
 insert into verfilmd (name) values ('ja');
 insert into verfilmd (name) values ('NULL'); /*kijken of null kan */
 
-insert into products_genre (name) values (1,1); /*snappen we niet*/
-insert into products_genre (name) values (1,2);
-insert into products_genre (name) values (2,2);
