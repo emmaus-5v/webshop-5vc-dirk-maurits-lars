@@ -59,7 +59,7 @@ insert into products (name, description, code, price, genre_id, schrijver_id, bl
 insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('Alaska', '..', '686928463-6', 14, 6, 5, 184, 5 ,2 );
 insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('Asbestemming', '..', '492662523-7', 17, 2 , 1 , 344 , 1 , 2);
 insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('Jip en Janneke', '..', '672662523-7', 7, 6, 6, 353, 5, 2);
-insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('Joe Speedboot', '..', '498862523-7', 14, 6, 7, 316, 1 , 2);
+insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('Joe Speedboot', '..', '498862523-7', 14, 6, 11, 316, 1 , 2);
 insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('De aanslag', '..', '492493523-7', 27, 8, 8, 347, 1, 2);
 insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('The Communist Manifesto', 'Hamers en sikkels', '4927543523-7', 69, 9, 9, 432, 6, 2);
 insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('Harry Potter en de Steen der Wijzen', 'deel 1 van Harrie Potter', '497693523-7', 10, 6, 10, 232, 7, 1);
@@ -84,6 +84,7 @@ insert into schrijver (name) values ('Anne Frank');
 insert into schrijver (name) values ('Harry Mulisch');
 insert into schrijver (name) values ('Karl Marx');
 insert into schrijver (name) values ('J. K. Rowling');
+insert into schrijver (name) values ('Tommy Wieringa')
 
 insert into uitgever (name) values ('De Bezige Bij');
 insert into uitgever (name) values ('	Verlag Franz Eher Nachfolger GmbH');
