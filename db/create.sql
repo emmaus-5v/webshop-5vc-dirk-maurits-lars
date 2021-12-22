@@ -84,7 +84,7 @@ insert into schrijver (name) values ('Anne Frank');
 insert into schrijver (name) values ('Harry Mulisch');
 insert into schrijver (name) values ('Karl Marx');
 insert into schrijver (name) values ('J. K. Rowling');
-insert into schrijver (name) values ('Tommy Wieringa')
+insert into schrijver (name) values ('Tommy Wieringa');
 
 insert into uitgever (name) values ('De Bezige Bij');
 insert into uitgever (name) values ('	Verlag Franz Eher Nachfolger GmbH');
