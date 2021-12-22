@@ -13,7 +13,7 @@ CREATE TABLE products (
   schrijver_id INTEGER,
   bladzijdes INTEGER,
   uitgever_id INTEGER,
-  verflimd_id INTEGER
+  verfilmd_id INTEGER
 );
 
 DROP TABLE IF EXISTS genre;
@@ -51,18 +51,18 @@ CREATE TABLE verfilmd (
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
-insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('Advocaat van de hanen',  '..', '816905633-0', 19, 1 , 1 , 573, 1 , 1);
-insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('Mein Kampf', '..', '077030122-3', 22, 3, 2, 818, 2, 2 );
-insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('Het Achterhuis', '..', '492092523-7', 6, 3, 7, 297 , 3, 1 );
-insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('Het gouden ei', '..', '445924201-X', 3.5, 3, 3, 98, 4/5 , 1);
-insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('The Da Vinci Code', '..', '693155505-7', 24.5, 4, 4, 489 , 4 , 1);
-insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('Alaska', '..', '686928463-6', 14, 6, 5, 184, 5 ,2 );
-insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('Asbestemming', '..', '492662523-7', 17, 2 , 1 , 344 , 1 , 2);
-insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('Jip en Janneke', '..', '672662523-7', 7, 5/6, 6, 353, 5, 2);
-insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('Joe Speedboot', '..', '498862523-7', 14, 6, 7, 316, 1 , 2);
-insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('De aanslag', '..', '492493523-7', 27, 8, 8, 352, 1, 1);
-insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('De aanslag', '..', '492493523-7', 27, 8, 8, 352, 1, 1);
-insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verflimd_id) values ('De aanslag', '..', '492493523-7', 27, 8, 8, 352, 1, 1);
+insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('Advocaat van de hanen',  '..', '816905633-0', 19, 1 , 1 , 573, 1 , 1);
+insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('Mein Kampf', '..', '077030122-3', 22, 3, 2, 818, 2, 2 );
+insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('Het Achterhuis', '..', '492092523-7', 6, 3, 7, 297 , 3, 1 );
+insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('Het gouden ei', '..', '445924201-X', 3.5, 3, 3, 98, 4/5 , 1);
+insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('The Da Vinci Code', '..', '693155505-7', 24.5, 4, 4, 489 , 4 , 1);
+insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('Alaska', '..', '686928463-6', 14, 6, 5, 184, 5 ,2 );
+insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('Asbestemming', '..', '492662523-7', 17, 2 , 1 , 344 , 1 , 2);
+insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('Jip en Janneke', '..', '672662523-7', 7, 6, 6, 353, 5, 2);
+insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('Joe Speedboot', '..', '498862523-7', 14, 6, 7, 316, 1 , 2);
+insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('De aanslag', '..', '492493523-7', 27, 8, 8, 347, 1, 2);
+insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('The Communist Manifesto', 'Hamers en sikkels', '4927543523-7', 69, 9, 9, 432, 6, 2);
+insert into products (name, description, code, price, genre_id, schrijver_id, bladzijdes, uitgever_id, verfilmd_id) values ('Harry Potter en de Steen der Wijzen', 'deel 1 van Harrie Potter', '497693523-7', 10, 6, 10, 232, 7, 1);
 
 insert into genre (name) values ('Drama');
 insert into genre (name) values ('Literaire fictie');
@@ -72,6 +72,7 @@ insert into genre (name) values ('Horror');
 insert into genre (name) values ('Fictie');
 insert into genre (name) values ('Kinderboek');
 insert into genre (name) values ('Oorlog');
+insert into genre (name) values ('Filosofisch');
 
 insert into schrijver (name) values ('A.F.Th. van der Heijden');
 insert into schrijver (name) values ('Adolf Hitler');
@@ -80,13 +81,18 @@ insert into schrijver (name) values ('Dan Brown');
 insert into schrijver (name) values ('Anna Woltz');
 insert into schrijver (name) values ('Annie M.G. Schmidt');
 insert into schrijver (name) values ('Anne Frank');
+insert into schrijver (name) values ('Harry Mulisch');
+insert into schrijver (name) values ('Karl Marx');
+insert into schrijver (name) values ('J. K. Rowling');
 
 insert into uitgever (name) values ('De Bezige Bij');
 insert into uitgever (name) values ('	Verlag Franz Eher Nachfolger GmbH');
 insert into uitgever (name) values ('Prometheus');
 insert into uitgever (name) values ('Luitingh');
 insert into uitgever (name) values ('Querido');
+insert into uitgever (name) values ('Karl Marx');
+insert into uitgever (name) values ('de Harmonie');
 
 insert into verfilmd (name) values ('ja');
-insert into verfilmd (name) values ('NULL'); /*kijken of null kan */
+insert into verfilmd (name) values ('nee'); /*kijken of null kan */
 
